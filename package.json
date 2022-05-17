@@ -7,7 +7,7 @@
     "dev": "clear && ts-node-dev ./src/index.ts",
     "start": "tsc && node ./build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/future4code/Joy-labenu-system1.git"
@@ -31,6 +31,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "knex": "^2.0.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
   }
 }
