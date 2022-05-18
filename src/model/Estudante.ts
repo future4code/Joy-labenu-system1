@@ -1,20 +1,21 @@
 import { v4 as uuidv4 } from 'uuid'
+import { inserirEstudante } from '../querys/inserirEstudante'
 
 export class Estudante  {
 
     private id: string
     private nome: string
     private email: string
-    private data_nasc: string
+    private dataNasc: Date
 
-    constructor(nome:string, email:string, data_nasc:string){
+    constructor(nome:string, email:string, dataNasc: Date){
         this.id = uuidv4()
         this.nome = nome
         this.email = email
-        this.data_nasc = data_nasc
+        this.dataNasc = dataNasc
     }
 
-    public postEstudante() {
-        
+    public async cadastrarEstudante() {
+       return await inserirEstudante(this.id, this.nome, this.email, this.dataNasc)
     }
 }
