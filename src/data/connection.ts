@@ -1,6 +1,5 @@
 import knex from "knex";
 import dotenv from "dotenv";
-
 dotenv.config();
 
 export const connection = knex({
@@ -12,4 +11,4 @@ export const connection = knex({
     password: process.env.DB_PASS,
     database: process.env.DB_NAME
   }
-});
+})

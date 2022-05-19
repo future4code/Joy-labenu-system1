@@ -1,5 +1,5 @@
 import { Express, Request, Response } from "express";
-import { Estudante } from "../model/Estudante";
+import { Estudante } from "../../model/Estudante";
 
 export const postEstudante = async (req:Request, res:Response):Promise<void> => {
     let errorCode = 500

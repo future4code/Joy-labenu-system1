@@ -1,4 +1,4 @@
-import { connection } from "../data/connection";
+import { connection } from "../../data/connection";
 
 export async function inserirEstudante(id: string,nome:string|undefined, email:string|undefined, dataNasc:Date|undefined, turmaId:string|undefined):Promise<void> {    
     const result = await connection("ESTUDANTE")

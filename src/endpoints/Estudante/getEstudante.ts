@@ -1,7 +1,7 @@
 import { Express, Request, Response } from "express";
-import { Estudante } from "../model/Estudante";
+import { Estudante } from "../../model/Estudante";
 
-export const gertEstudante = async (req:Request, res:Response):Promise<void> => {
+export const getEstudante = async (req:Request, res:Response):Promise<void> => {
     let errorCode = 500
     try {
         const nome = req.params.nome as string
@@ -13,7 +13,7 @@ export const gertEstudante = async (req:Request, res:Response):Promise<void> => 
             result = new Estudante(nome).buscarEstudantes()
         }
         
-        res.status(201).send()
+        res.status(201).send(result)
     } catch (error:any) {
         res.status(errorCode).send(error.message || error.sqlMessage)
     }

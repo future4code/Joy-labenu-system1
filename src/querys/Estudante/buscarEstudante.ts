@@ -1,6 +1,7 @@
-import { connection } from "../data/connection";
+import { connection } from "../../data/connection";
 
 export async function buscarEstudante(nome?: string|undefined):Promise<any> {
+   
     let result
     if(!nome){
         result = await connection("ESTUDANTE")

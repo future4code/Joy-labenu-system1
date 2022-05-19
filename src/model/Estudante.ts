@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid'
-import { inserirEstudante } from '../querys/inserirEstudante'
-import {buscarEstudante} from "../querys/buscarEstudante"
+import { inserirEstudante } from '../querys/Estudante/inserirEstudante'
+import {buscarEstudante} from "../querys/Estudante/buscarEstudante"
 
 export class Estudante  {
 
