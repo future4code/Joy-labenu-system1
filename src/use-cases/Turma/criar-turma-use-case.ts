@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid'
-import { TurmasRepository } from '../data/turmas-repository'
+import { TurmasRepository } from '../../data/knex/Turma/turmas-repository'
 
 export interface CriarTurmaUseCaseRequest {
   nome: string

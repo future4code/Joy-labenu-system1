@@ -1,5 +1,5 @@
-import { connection } from "../connection";
-import { TurmaChangeModuloData, TurmaCreateData, TurmasRepository } from "../turmas-repository";
+import { connection } from "../../connection";
+import { TurmaChangeModuloData, TurmaCreateData, TurmasRepository } from "./turmas-repository";
 
 export class KnexTurmasRepository implements TurmasRepository {
     async criar (data: TurmaCreateData): Promise<void> {

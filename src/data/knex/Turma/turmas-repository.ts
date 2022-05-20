@@ -8,6 +8,8 @@ export interface TurmaChangeModuloData {
     modulo: string
 }
 
+
+
 export interface TurmasRepository {
     criar: (data: TurmaCreateData) => Promise<void>
     mudar: (data: TurmaChangeModuloData) => Promise<void>
