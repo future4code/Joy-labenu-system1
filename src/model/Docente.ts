@@ -5,19 +5,23 @@ import { Usuario } from './Usuario';
 
 export class Docente  extends Usuario{
 
-    constructor( protected id?: string,
-        protected nome?: string|undefined,
-        protected email?: string|undefined,
-        protected dataNasc?: Date|undefined,
-        protected turmaId?: string|undefined,
-        protected especialidades?: string[]){
+    constructor( protected id: string,
+        protected nome: string|undefined,
+        protected email: string|undefined,
+        protected dataNasc: Date|undefined,
+        protected turmaId: string|undefined,
+        protected especialidades: string[]){
         super(nome, email, dataNasc, turmaId);
         this.id=uuidv4();
         this.especialidades = especialidades
     }
    
+   public get getId() : string {
+       return this.id
+   }
    
-   public get getEspecialidades() : string[]|undefined {
+   
+   public get getEspecialidades() : string[] {
        return this.especialidades
    }
    

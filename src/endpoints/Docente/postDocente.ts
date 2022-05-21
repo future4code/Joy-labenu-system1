@@ -1,14 +1,14 @@
 import { Request, Response } from "express";
-import { KnexDocenteRespository } from "../../data/knex/Docente/knex-docente-repository";
+import { KnexDocenteRepository } from "../../data/knex/Docente/knex-docente-repository";
 import { CriarDocenteUseCase } from "../../use-cases/Docente/criar-docente-use-case";
 
 export async function postDocente(req:Request, res:Response):Promise<void> {
 	let errorCode = 500
 	try {
-		let {nome, email, turmaId, dataNasc,especialidades} = req.body
+		let {nome, email, turma_id, data_nasc,especialidades} = req.body
 		
-		const data = dataNasc.split("/");
-		dataNasc = new Date(data[2], data[1], data[0]);
+		const data = data_nasc.split("/");
+		data_nasc = new Date(`${data[2]}-${data[1]}-${data[0]}`);
 
 		if(!nome){
 			errorCode = 400
@@ -16,17 +16,17 @@ export async function postDocente(req:Request, res:Response):Promise<void> {
 		    }else if(!email){
 			errorCode = 400
 			throw new Error("O campo 'email' é obrigatorio")
-		    }else if( !dataNasc){
+		    }else if( !data_nasc){
 			errorCode = 400
 			throw new Error("O campo 'dataNasc' é obrigatorio")
-		    }else if(!turmaId){
+		    }else if(!turma_id){
 			errorCode = 400
 			throw new Error("O campo 'turmaId' é obrigatorio")
 		    }
-		    const knexDocenteRespository=new KnexDocenteRespository()
-		    const criarDocenteUseCase=new CriarDocenteUseCase(knexDocenteRespository);
+		    const knexDocenteRepository=new KnexDocenteRepository()
+		    const criarDocenteUseCase=new CriarDocenteUseCase(knexDocenteRepository);
 
-		    await criarDocenteUseCase.execute({nome, email, turmaId, dataNasc,especialidades})
+		    await criarDocenteUseCase.execute({nome, email, data_nasc, turma_id,especialidades})
 
 		res.status(201).send("Docente Cadastrado")
 	} catch (error:any) {
