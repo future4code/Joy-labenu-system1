@@ -4,7 +4,7 @@
   "description": "Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização.",
   "main": "index.js",
   "scripts": {
-    "dev": "clear && ts-node-dev ./src/index.ts",
+    "dev": "ts-node-dev ./src/index.ts",
     "start": "tsc && node ./build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

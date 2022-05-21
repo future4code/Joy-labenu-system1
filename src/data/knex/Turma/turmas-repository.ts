@@ -11,4 +11,5 @@ export interface TurmaChangeModuloData {
 export interface TurmasRepository {
     criar: (data: TurmaCreateData) => Promise<void>
     mudar: (data: TurmaChangeModuloData) => Promise<void>
+    buscar:()=>Promise<any>
 }

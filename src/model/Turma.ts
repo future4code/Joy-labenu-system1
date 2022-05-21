@@ -19,17 +19,4 @@ export class Turma  {
         this.modulo=modulo
     }
 
-    /**
-     * postTurma
-     */
-    public postTurma() {
-        async (req:Request,res:Response):Promise<void> =>{
-            try {
-                const {nome,docentes,estudantes,modulo}=req.body
-                
-            } catch (error:any) {
-                
-            }
-        }
-    }
 }

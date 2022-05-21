@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
-import { KnexTurmasRepository } from '../../data/knex/knex-turmas-repository'
-import { MudarTurmaUseCase } from '../../use-cases/mudar-turma-modulo-use-case'
+import { KnexTurmasRepository } from '../../data/knex/Turma/knex-turmas-repository'
+import { MudarTurmaUseCase } from '../../use-cases/Turma/mudar-turma-modulo-use-case'
 
 export const putModuloTurma = async (req: Request, res: Response): Promise<void> => {
   try {

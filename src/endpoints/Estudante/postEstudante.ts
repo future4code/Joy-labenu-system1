@@ -6,7 +6,7 @@ export const postEstudante = async (req:Request, res:Response):Promise<void> => 
     try {
         let {nome, email, turmaId, dataNasc} = req.body
       
-        const data = dataNasc.split("/");
+        const data = dataNasc?.split("/");
         dataNasc = new Date(data[2], data[1], data[0]);
         
         if(!nome){

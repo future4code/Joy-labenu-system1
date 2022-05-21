@@ -1,5 +1,3 @@
-
-
 export abstract class Usuario {
 	constructor(
 		protected nome?: string|undefined,
