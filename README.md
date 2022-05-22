@@ -1,6 +1,6 @@
 # LabenuSystem: <img src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f3eb.svg" width="25"> (backend)
 
-## Documentação API:
+## Documentação API
  Acesse o postman aqui 👉 [Documentação](https://documenter.getpostman.com/view/18676403/Uyxoi4WH)
 
 ## Deploy no Heroku:
@@ -9,7 +9,7 @@
 
 
 
-## Tecnologias utilizadas: 🖥️
+## Tecnologias utilizadas 🖥️
 - Typescript
 - Node
 - SQL
@@ -22,7 +22,7 @@
 - Axios
 
 
-## As funcionalidades são:
+## Funcionalidades 
 
  → Verificar Estudante pelo nome 
 
