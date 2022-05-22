@@ -3,10 +3,7 @@
 ## Documentação API
  Acesse o postman aqui 👉 [Documentação](https://documenter.getpostman.com/view/18676403/Uyxoi4WH)
 
-## Deploy no Heroku:
-
-
-
+## Deploy no Heroku
 
 
 ## Tecnologias utilizadas 🖥️
