@@ -6,18 +6,7 @@
 ## Deploy no Heroku:
 
 
-## Desenvolvedores 🤖
 
-<table>
-  <tr>
-  <td align="center"><a href="https://github.com/FIXER3600">
-    <sub><b>Guilherme de Oliveira Barros</b></sub>
-        <td align="center"><a href="https://github.com/sjonatask">
-    <sub><b>Jonathan de Andrade Souza</b></sub>
-    <br />
-  <td align="center"><a href="https://github.com/mdmath15">
-    <sub><b>Matheus Lima Ribeiro</b></sub>
-</table>
 
 
 ## Tecnologias utilizadas: 🖥️
@@ -54,4 +43,21 @@
  → Cadastrar Estudante em uma Turma
     
  → Cadastrar Docente em uma Turma
+ 
+ ## Desenvolvedores 🤖
+
+<table>
+  <tr>
+  <td align="center"><a href="https://github.com/FIXER3600">
+     <img src="https://avatars.githubusercontent.com/u/47544503?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil do Guilherme"/>
+    <sub><b>Guilherme de Oliveira Barros</b></sub>
+        <td align="center"><a href="https://github.com/sjonatask">
+        <img src="https://avatars.githubusercontent.com/u/89224747?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil de Jonathan">
+    <sub><b>Jonathan de Andrade Souza</b></sub>
+    <br />
+  <td align="center"><a href="https://github.com/mdmath15">
+    <img src="https://avatars.githubusercontent.com/u/86062294?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil de Matheus" />
+      <br />
+    <sub><b>Matheus Lima Ribeiro</b></sub>
+</table>
     
