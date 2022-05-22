@@ -15,8 +15,6 @@
 - Cors
 - Dotenv
 - Knex
-- React
-- Axios
 
 
 ## Funcionalidades 
