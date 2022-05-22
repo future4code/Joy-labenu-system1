@@ -3,6 +3,7 @@ import { connection } from "../../connection";
 import { DocenteChangeData, DocenteCreateData, DocenteRepository } from "./docente-repository";
 import { v4 as uuidv4 } from 'uuid'
 export class KnexDocenteRepository implements DocenteRepository{
+	
 	async mudar(data: DocenteChangeData):Promise<void>{
 		await connection("DOCENTE")
 		.update({
@@ -26,8 +27,7 @@ export class KnexDocenteRepository implements DocenteRepository{
 		    "data_nasc": data.data_nasc,
 		    "turma_id": data.turma_id,
 		})
-		const arrayEspecialidades = newProfessor.getEspecialidades
-		console.log(arrayEspecialidades);
+		const arrayEspecialidades = newProfessor.getEspecialidades()
 		
 		for (let especialidade of arrayEspecialidades) {
 			const idEspecialidade = uuidv4()
@@ -42,7 +42,7 @@ export class KnexDocenteRepository implements DocenteRepository{
 			await connection('DOCENTE_ESPECIALIDADE')
 			    .insert({
 				id: idEspecDocente,
-				docente_id: newProfessor.getId,
+				docente_id: newProfessor.getId(),
 				especialidade_id: idEspecialidade
 			    })
 		    }
