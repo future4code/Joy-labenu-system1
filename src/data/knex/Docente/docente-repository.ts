@@ -16,5 +16,5 @@ export interface DocenteRepository{
 	criar:(data:DocenteCreateData)=>Promise<void>
 	buscar:()=>Promise<any>
 	mudar:(data:DocenteChangeData)=>Promise<void>
-	//buscarPoo:()=>Promise<any>
+	buscarPoo:()=>Promise<any>
 }

@@ -3,6 +3,18 @@ import { connection } from "../../connection";
 import { DocenteChangeData, DocenteCreateData, DocenteRepository } from "./docente-repository";
 import { v4 as uuidv4 } from 'uuid'
 export class KnexDocenteRepository implements DocenteRepository{
+	async buscarPoo (): Promise<any>{
+		const result=await connection.raw(`
+		SELECT d.nome AS professor
+		FROM DOCENTE AS d
+		INNER JOIN DOCENTE_ESPECIALIDADE de
+		ON de.docente_id = d.id
+		INNER JOIN ESPECIALIDADE e
+		ON e.id = de.especialidade_id
+		WHERE e.nome = 'POO'`
+		)
+		return result[0]
+	};
 	
 	async mudar(data: DocenteChangeData):Promise<void>{
 		await connection("DOCENTE")
