@@ -4,7 +4,7 @@
  Acesse o postman aqui 👉 [Documentação](https://documenter.getpostman.com/view/18676403/Uyxoi4WH)
 
 ## Deploy no Heroku
-
+[LabenuSystem](https://labenu-system01.herokuapp.com/turmas)
 
 ## Tecnologias utilizadas 🖥️
 - Typescript
