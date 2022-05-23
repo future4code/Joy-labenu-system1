@@ -1,33 +1,60 @@
-## LabenuSystem:
+# LabenuSystem <img src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f3eb.svg" width="25"> (backend)
 
-Você estuda na Labenu_ há tanto tempo que já parecem anos, não é? Então, hoje, vamos pedir para criar um sistema que represente o básico da nossa organização. 
+## Documentação API
+ Acesse o postman aqui 👉 [Documentação](https://documenter.getpostman.com/view/18676403/Uyxoi4WH)
 
-Ele deve possuir, ao menos, as 3 entidades importantes:
+## Deploy no Heroku
+[LabenuSystem](https://labenu-system01.herokuapp.com/turmas)
 
-1. Estudantes 
+## Tecnologias utilizadas 🖥️
+- Typescript
+- Node
+- SQL
+- MySQL
+- Express
+- Cors
+- Dotenv
+- Knex
 
-    Representa estudantes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e os principais hobbies dele. 
 
-2. Docente
+## Funcionalidades 
 
-    Representa docentes da nossa instituição. Eles devem possuir: id, nome, email, data de nascimento e todas as especialidades dele. Há 7 especialidades: React, Redux, CSS, Testes, Typescript, Programação Orientada a Objetos e Backend
+ → Verificar Estudante pelo nome 
 
-3. Turma
+ → Verificar todos Docentes cadastrados
 
-    Toda turma é composta das seguintes características: id, nome, data de início, data de término, lista de professores responsáveis, uma lista de alunos e módulo atual em que a turma está.
+ → Verificar Docentes que são especialistas em POO    
 
-    O módulo pode assumir os valores de 1 a 7 ou `undefined`, indicando que as aulas dessa turma ainda não começaram. Para esse exercício, vamos considerar que existam dois tipos de turma: integral ou noturna. Há uma restrição para o nome das turmas noturnas: tem que terminar com `-na-night`.
+ → Verificar todas as Turmas ativas
 
-As funcionalidades básicas são:
+ → Alterar Estudante de Turma
+    
+ → Alterar Docente de Turma
+    
+ → Alterar módulo da Turma
 
-→ Criar estudante;
+ → Cadastrar uma Turma
 
-→ Criar docente;
+ → Cadastrar Estudante em uma Turma
+    
+ → Cadastrar Docente em uma Turma
+ 
+ ## Desenvolvedores 🤖
 
-→ Criar turma;
-
-→ Adicionar estudante na turma;
-
-→ Adicionar docente na turma;
-
-→ Pegar a idade de algum estudante a partir do id
+<table>
+  <tr>
+  <td align="center"><a href="https://github.com/FIXER3600">
+     <img src="https://avatars.githubusercontent.com/u/47544503?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil do Guilherme"/>
+   <br/>
+    <sub><b>Guilherme de Oliveira Barros</b></sub>
+        <td align="center"><a href="https://github.com/sjonatask">
+        <img src="https://avatars.githubusercontent.com/u/89224747?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil de Jonathan">
+          <br/>
+    <sub><b>Jonathan de Andrade Souza</b></sub>
+    <br />
+  <td align="center"><a href="https://github.com/mdmath15">
+    <img src="https://avatars.githubusercontent.com/u/86062294?v=4" style="border-radius: 50%" width="100px" alt="Imagem do perfil de Matheus" />
+      <br />
+    <sub><b>Matheus Lima Ribeiro</b></sub>
+</table>
+    
